@@ -1,0 +1,8 @@
+file = open('input.txt', 'r')
+a = int(file.readline())
+b = int(file.readline())
+c = int(file.readline())
+file.close()
+out = open('output.txt', 'w')
+out.write(str(a//2 + a%2 + b//2 + b%2 + c//2 + c%2))
+out.close()
